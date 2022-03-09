@@ -22,5 +22,5 @@
 1500
 ffmpeg 
 -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 "webcam_%T.avi"
-5
+10
 1

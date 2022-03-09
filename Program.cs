@@ -128,7 +128,7 @@ namespace Noisedetector
                 avg = 0;
                 Console.WriteLine("    --- SOME NOISE --- ");
                 startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-                endTime = startTime + (lengthInMinutesWhenToStop * 60 * 10);
+                endTime = startTime + (lengthInMinutesWhenToStop * 60 * 20); // 20? HACK
 
                 if (started == false)
                 {
