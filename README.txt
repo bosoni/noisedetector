@@ -4,7 +4,7 @@ noisedetector
 MIT license.
 
 Compiled .exe can be found at 
-./noisedetector/bin/x64/Debug/noisedetector.exe
+./bin/x64/Debug/noisedetector.exe
 
 Double click that on windows.
 On linux, install mono, then
