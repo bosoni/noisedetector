@@ -139,6 +139,23 @@ namespace Noisedetector
                     {
                         Process process = new Process();
                         process.StartInfo.FileName = programToStart;
+
+                        // change %T to  day.month.year.minutes.seconds
+                        if (programParameters.Contains("%T"))
+                        {
+                            string time = DateTime.Now.ToString();
+                            time = time.Replace("/", ".");
+
+                            string newParams = programParameters.Substring(0, programParameters.IndexOf("%T"));
+                            newParams += time;
+                            newParams += programParameters.Substring(programParameters.IndexOf("%T") + 2);
+                            newParams = newParams.Replace(" ", "_");
+
+                            if (debug == 1) Console.WriteLine(newParams);
+
+                            programParameters = newParams;
+                        }
+
                         process.StartInfo.Arguments = programParameters;
                         process.Start();
                         //process.WaitForExit();

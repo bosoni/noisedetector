@@ -5,7 +5,7 @@
 #  volume peak when program setted below starts
 #  program name which to start when volume goes up
 #  program's parameters
-#  how long program is running from last volume peak (in seconds)
+#  how long program is running from last volume peak
 #  debug information (0=not show, 1=show)
 # ie:  (if volume goes over 1000 (with 2 tests), opens notepad with warning.txt and keep it open 60seconds, and shows debug information(current volume avg))
 # 0
@@ -20,7 +20,7 @@
 0
 1
 1500
-programNameHere  (SETUP YOUR  noise_config.txt)
-parametersHere
-60
+ffmpeg 
+-f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 "webcam_%T.avi"
+5
 1
