@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noisedetector", "Noisedetector.csproj", "{292D16BA-E68D-43D0-87FF-957348FF1E1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Debug|x64.ActiveCfg = Debug|x64
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Debug|x64.Build.0 = Debug|x64
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Release|x64.ActiveCfg = Release|x64
+		{292D16BA-E68D-43D0-87FF-957348FF1E1F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7402894-F490-4269-B438-0A407709E841}
+	EndGlobalSection
+EndGlobal
