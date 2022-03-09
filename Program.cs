@@ -36,6 +36,8 @@ namespace Noisedetector
         {
             GraphicsDeviceManager graphics;
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 1;
+            graphics.PreferredBackBufferHeight = 1;
             graphics.ApplyChanges();
 
             new MicrophoneTest().Init();
@@ -224,9 +226,9 @@ namespace Noisedetector
                 return;
             }
 
-            Console.WriteLine("load noise_config.txt");
+            Console.Write("load noise_config.txt");
             LoadConfig();
-            Console.WriteLine("ok");
+            Console.WriteLine(" #OK");
 
             //mp = Microphone.Default;
             mp = Microphone.All[mic];
