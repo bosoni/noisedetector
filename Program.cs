@@ -149,7 +149,6 @@ namespace Noisedetector
                             string newParams = programParameters.Substring(0, programParameters.IndexOf("%T"));
                             newParams += time;
                             newParams += programParameters.Substring(programParameters.IndexOf("%T") + 2);
-                            newParams = newParams.Replace(" ", "_");
 
                             if (debug == 1) Console.WriteLine(newParams);
 
