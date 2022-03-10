@@ -138,7 +138,7 @@ namespace Noisedetector
                     try
                     {
                         Process process = new Process();
-                        process.StartInfo.FileName = programToStart;
+                        process.StartInfo.FileName = programToStart.Substring(0, programToStart.Length - 1);
 
                         // change %T to  day.month.year.minutes.seconds
                         if (programParameters.Contains("%T"))
