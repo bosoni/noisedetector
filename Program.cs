@@ -72,7 +72,7 @@ namespace Noisedetector
 
         bool started = false;
         long startTime = 0, endTime = 0;
-        int lengthInMinutesWhenToStop = 0;
+        int lengthInSecondsWhenToStop = 0;
         string programToStart = "";
         string programParameters = "";
 
@@ -128,7 +128,7 @@ namespace Noisedetector
                 avg = 0;
                 Console.WriteLine("    --- SOME NOISE --- ");
                 startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-                endTime = startTime + (lengthInMinutesWhenToStop * 60 * 20); // 20? HACK
+                endTime = startTime + (lengthInSecondsWhenToStop * 1000);
 
                 if (started == false)
                 {
@@ -227,7 +227,7 @@ namespace Noisedetector
             maxvolume = int.Parse(lines[st++]);
             programToStart = lines[st++];
             programParameters = lines[st++];
-            lengthInMinutesWhenToStop = int.Parse(lines[st++]);
+            lengthInSecondsWhenToStop = int.Parse(lines[st++]);
             debug = int.Parse(lines[st++]);
         }
 

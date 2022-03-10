@@ -15,7 +15,7 @@ $ mono noisedetector.exe
 
 Two windows opens (one 1x1 size, other where one can see some infos).
 
-You will see numbers (audio data's average volume from mic). Make some noise and then average value goes up. Take some volume value and use it in  noise_config.txt  as volume peak value. Change program name and parameters etc. Then close noisedetector and run noisedetector.exe again.
+You will see numbers (audio data's average volume from mic). Make some noise and then average value goes up. Take some volume value and use it in  noise_config.txt  as volume peak value. Change program name and parameters etc. Then close noisedetector and start it again.
 
 
 
