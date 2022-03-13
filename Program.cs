@@ -147,6 +147,7 @@ namespace Noisedetector
                         {
                             string time = DateTime.Now.ToString();
                             time = time.Replace("/", ".");
+                            time = time.Replace(" ", "_");
 
                             newParams = programParameters.Substring(0, programParameters.IndexOf("%T"));
                             newParams += time;
