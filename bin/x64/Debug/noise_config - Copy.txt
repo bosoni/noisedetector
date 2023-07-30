@@ -1,0 +1,26 @@
+# noisedetector  (c) mjt 2022
+# parameters in this file:
+#  mic number (0-x)
+#  how many tests to make (when calculating volume avg)
+#  volume peak when program setted below starts
+#  program name which to start when volume goes up
+#  program's parameters
+#  how long program is running from last volume peak
+#  debug information (0=not show, 1=show)
+# ie:  (if volume goes over 1000 (with 2 tests), opens notepad with warning.txt and keep it open 60seconds, and shows debug information(current volume avg))
+# 0
+# 2
+# 1000
+# notepad.exe
+# warning.txt
+# 60
+# 1
+
+# modify config below:
+0
+2
+100
+ffmpeg 
+-f pulse -ac 2 -f v4l2 -i /dev/video0 -vcodec libx264 "out/webcam_%T.avi"
+10
+1

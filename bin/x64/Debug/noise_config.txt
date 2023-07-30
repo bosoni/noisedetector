@@ -18,9 +18,9 @@
 
 # modify config below:
 0
-1
-1500
+2
+100
 ffmpeg 
--f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 "webcam_%T.avi"
-120
+-i /dev/video0 -vcodec libx264 "out/webcam_%T.avi"
+10
 1
